@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.0</version>
+		<version>3.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dev.patika</groupId>
-	<artifactId>vet-management-system</artifactId>
+	<artifactId>vetmngsys</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>vet-management-system</name>
-	<description>final project for graduation from patika bootcamp</description>
+	<name>vetmngsys</name>
+	<description>migration project from monolithic to microservices architecture</description>
 	<url/>
 	<licenses>
 		<license/>
