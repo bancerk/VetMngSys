@@ -1,171 +1,85 @@
-# Vet Management System
+# VetMngSys
 
-A Spring Boot application for managing veterinary clinic operations, including animals, customers, doctors, appointments, vaccines, and available dates.
+This repo contains my https://github.com/bancerk/vet-management-system project and my attempt to migrate it from monolithic architecture to microservice architecture to gain familiarity with docker and kubernetes.
 
-## Features
+Kubernetes is not designed to operate at this project's small scale, so this repo will probably only go as far as a proof-of-concept.
 
-- Manage animals, customers, doctors, vaccines, and available dates.
-- RESTful API endpoints for CRUD operations.
-- Data validation and error handling.
-- PostgreSQL database integration.
-- Uses ModelMapper for DTO/entity mapping.
-- Layered architecture (entity, repository, service, manager, DTO, controller).
-- Advanced filtering and business rules for vaccines and appointments.
+# Suggested migration strategy
 
-## Project Structure
+This part of the document outlines the strategy for migrating the monolithic Vet Management System to a microservices architecture.
 
-```
-src/
-  main/
-    java/
-      dev/patika/vet_management_system/
-        api/           # REST controllers
-        business/      # Service and manager classes
-        core/          # Core utilities and exception handling
-        dao/           # Spring Data JPA repositories
-        dto/           # Data Transfer Objects (DTOs)
-        entities/      # JPA entities
-    resources/
-      application.yaml # Main configuration
-```
+## 1. Service Decomposition Strategy
+The first step is to identify the boundaries of the new microservices. Looking at the project's domains (Customer, Animal, Doctor, Appointment, Vaccine), we can decompose the monolith by business capability. Each service will be a self-contained application with its own database.
 
-## Getting Started
+Here is a potential breakdown:
 
-### Prerequisites
+*   **`customer-service`**:
+    *   **Responsibilities**: Manages all customer-related operations (CRUD).
+    *   **Entities**: `Customer`.
+    *   **API Endpoints**: `/api/v1/customers/**`.
 
-- Java 21
-- Maven
-- PostgreSQL
+*   **`animal-service`**:
+    *   **Responsibilities**: Manages all animal-related data. It will need to communicate with the `customer-service` to validate the existence of a customer when an animal is created or updated.
+    *   **Entities**: `Animal`.
+    *   **API Endpoints**: `/api/v1/animals/**`.
 
-### Setup
+*   **`scheduling-service`**:
+    *   **Responsibilities**: Manages doctors, their availability, and appointments. This service encapsulates the entire scheduling domain. It will need to communicate with the `animal-service` to get animal details for an appointment.
+    *   **Entities**: `Doctor`, `AvailableDate`, `Appointment`.
+    *   **API Endpoints**: `/api/v1/doctors/**`, `/api/v1/available-dates/**`, `/api/v1/appointments/**`.
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/yourusername/vet-management-system.git
-   cd vet-management-system
-   ```
+*   **`vaccine-service`**:
+    *   **Responsibilities**: Manages all vaccine records for animals, including business logic for expiry dates. It will need to communicate with the `animal-service` to link vaccines to a specific animal.
+    *   **Entities**: `Vaccine`.
+    *   **API Endpoints**: `/api/v1/vaccines/**`.
 
-2. **Configure the database:**
-   - Create a PostgreSQL database named `vet-management-system`.
-   - Update the credentials in [`src/main/resources/application.yaml`](src/main/resources/application.yaml) accordingly.
+## 2. Core Architectural Components
+A distributed system requires several new components to function effectively.
 
-3. **Build the project:**
-   ```sh
-   ./mvnw clean install
-   ```
+*   **API Gateway**:
+    *   **Purpose**: A single entry point for all client requests. It routes incoming requests to the appropriate microservice.
+    *   **Benefits**: Simplifies the client, provides a central place for cross-cutting concerns like authentication (e.g., using JWT), rate limiting, and SSL termination.
+    *   **Example Tech**: Spring Cloud Gateway
 
-4. **Run the application:**
-   ```sh
-   ./mvnw spring-boot:run
-   ```
-   The server will start on port `8085` by default. To change the server port edit [`src/main/resources/application.yaml`](src/main/resources/application.yaml) accordingly.
+*   **Service Registry & Discovery**:
+    *   **Purpose**: Allows services to find and communicate with each other without hardcoding hostnames and ports. Each microservice registers itself with the registry on startup.
+    *   **Example Tech**: Netflix Eureka, Consul, Zookeeper.
 
-## API Endpoints
+*   **Centralized Configuration**:
+    *   **Purpose**: Manages configuration properties for all microservices in a central location. This avoids scattering configuration across different services and allows for dynamic updates.
+    *   **Example Tech**: Spring Cloud Config Server
 
-### Animal
+*   **Inter-Service Communication**:
+    *   **Synchronous (REST APIs)**: For direct request/response interactions. For example, when creating an animal, the `animal-service` would make a synchronous call to the `customer-service` to verify the customer ID. Spring's `WebClient` or `RestTemplate` can be used for this.
 
-- `GET /animal?name={name}`  
-  Get animal details by name.
-- `GET /animal/{id}`  
-  Get animal details by ID.
-- `POST /animal/save`  
-  Create a new animal.
-- `PUT /animal/update`  
-  Update animal details.
-- `DELETE /animal/delete/{id}`  
-  Delete an animal by ID.
-- `GET /animal/vaccines?name={animalName}`  
-  List all vaccines for an animal by name.
+    *   **Asynchronous (Message Broker)**: For event-driven communication, which decouples services and improves resilience. For example, if a customer is deleted, the `customer-service` could publish a `CustomerDeleted` event. The `animal-service` would subscribe to this event and handle the deletion of associated pets.
+    *   **Example Tech**: RabbitMQ, Apache Kafka.
 
-### Customer
+## 3. Data Management Strategy
+A core principle of microservices is that each service owns its own data.
 
-- `GET /customer/{id}`  
-  Get customer details by ID.
-- `GET /customer?name={name}`  
-  Get customer details by name.
-- `POST /customer/save`  
-  Create a new customer.
-- `PUT /customer/update`  
-  Update customer details.
-- `DELETE /customer/delete/{id}`  
-  Delete a customer by ID.
-- `GET /customer/{id}/animals`  
-  List all animals belonging to a customer.
+*   **Database per Service**: Each microservice (`customer-service`, `animal-service`, etc.) will have its own dedicated database. This prevents tight coupling at the database level.
 
-### Doctor
+*   **Data Consistency**: With distributed data, you lose ACID transaction guarantees across services. You'll need to manage consistency using patterns like:
 
-- `GET /doctor/{id}`  
-  Get doctor details by ID.
-- `POST /doctor/save`  
-  Create a new doctor.
-- `PUT /doctor/update`  
-  Update doctor details.
-- `DELETE /doctor/delete/{id}`  
-  Delete a doctor by ID.
+    *   **Eventual Consistency**: The system becomes consistent over time. This is often achieved with asynchronous messaging.
 
-### Appointment
+    *   **Saga Pattern**: A sequence of local transactions. If one transaction fails, the saga executes compensating transactions to undo the preceding ones.
 
-- `GET /appointment?appointmentDate={yyyy-MM-ddTHH:mm:ss}`  
-  List appointments by date.
-- `GET /appointment?animalName={animalName}`  
-  List appointments by animal name.
-- `GET /appointment?doctorName={doctorName}`  
-  List appointments by doctor name.
-- `POST /appointment/save`  
-  Create a new appointment.
-- `PUT /appointment/update`  
-  Update appointment details.
-- `DELETE /appointment/delete/{id}`  
-  Delete an appointment by ID.
+## 4. Phased Migration Plan (The Strangler Fig Pattern)
+Instead of a "big bang" rewrite, you can migrate incrementally. The Strangler Fig Pattern is perfect for this.
 
-### Vaccine
+1.  **Identify a Candidate for Extraction**: Start with a part of the application that has fewer dependencies. In your case, `CustomerController` and its related logic is a great first candidate.
 
-- `GET /vaccine/{id}`  
-  Get vaccine details by ID.
-- `POST /vaccine/save`  
-  Create a new vaccine (only allowed if protection finish date is more than 6 months away).
-- `PUT /vaccine/update`  
-  Update vaccine details.
-- `DELETE /vaccine/delete/{id}`  
-  Delete a vaccine by ID.
-- `GET /vaccine/expiring-in-two-weeks`  
-  List animals with at least one vaccine expiring in the next two weeks (includes animal and vaccine details).
-- `GET /vaccine/animal/{animalName}`  
-  List all vaccines for a given animal by name.
 
-### Available Date
+2.  **Create the First Microservice**: Build the new `customer-service` as a separate Spring Boot application with its own database.
 
-- `GET /availabledate/{id}`  
-  Get available date by ID.
-- `POST /availabledate/save`  
-  Create a new available date.
-- `PUT /availabledate/update`  
-  Update available date.
-- `DELETE /availabledate/delete/{id}`  
-  Delete an available date by ID.
+3.  **Introduce the API Gateway**: Set up an API Gateway. Configure it to route all requests for `/customer/**` to the new `customer-service`. All other requests still go to the original monolith.
 
-## Business Rules
+5.  **Update the Monolith**: The monolith now becomes a client of the new `customer-service`. Where `AnimalManager` used to call `customerRepo.findById()`, it will now make an HTTP request to the `customer-service` via the service discovery mechanism.
 
-- **Vaccine Registration:**  
-  Vaccines can only be registered if their protection finish date is more than 6 months from today.
-- **Vaccine Expiry Reporting:**  
-  `/vaccine/expiring-in-two-weeks` returns animals and vaccine info for vaccines expiring within the next 14 days.
-- **Appointment Filtering:**  
-  Appointments can be filtered by date, animal name, or doctor name using query parameters.
+7.  **Repeat**: Continue this process for the next domain. For example, extract the `animal` functionality into an `animal-service`. Now, the monolith and the `vaccine-service` (once it's created) will call the `animal-service` for animal data.
 
-## Technologies Used
+9.  **Strangle the Monolith**: As more functionality is moved into microservices, the original monolithic application shrinks. Eventually, all its features will be handled by the new services, and the monolith can be decommissioned.
 
-- Java 21
-- Spring Boot 3.5.0
-- Spring Data JPA
-- PostgreSQL
-- Lombok
-- ModelMapper
-
-## API Testing
-
-A Postman collection is provided at [`src/main/resources/vet-management-system.postman_collection.json`](src/main/resources/vet-management-system.postman_collection.json).
-
----
-
-For more details, see the code and comments in each controller and DTO.
+This outline provides a strategic roadmap for the migration. The key is to proceed incrementally, ensuring the system remains functional at every step.
