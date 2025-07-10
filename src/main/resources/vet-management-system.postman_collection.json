@@ -1,0 +1,4301 @@
+{
+	"info": {
+		"_postman_id": "93156710-8cd6-4142-80c6-40f401658538",
+		"name": "vet-management-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45549771",
+		"_collection_link": "https://canberksezen.postman.co/workspace/Canberk-Sezen's-Workspace~4ebfa815-a21d-4507-8d93-64068aaf4081/collection/45549771-93156710-8cd6-4142-80c6-40f401658538?action=share&source=collection_link&creator=45549771"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "get",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getAnimals",
+					"item": [
+						{
+							"name": "getAnimals",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/1/animals",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"1",
+										"animals"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAnimals2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/2/animals",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"2",
+										"animals"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAnimals3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/3/animals",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"3",
+										"animals"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAnimals4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/4/animals",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"4",
+										"animals"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAnimals5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer/5/animals",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"5",
+										"animals"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getName",
+					"item": [
+						{
+							"name": "getName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer?name=Test%20Customer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test%20Customer"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getName2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer?name=Test%20Customer2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test%20Customer2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getName3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer?name=Test%20Customer3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test%20Customer3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getName4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer?name=Test%20Customer4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test%20Customer4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getName5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/customer?name=Test%20Customer5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test%20Customer5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "save",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Customer\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Customer2\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Customer3\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Customer4\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Customer5\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update",
+					"item": [
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"1\",\n    \"name\": \"Test Customer\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"2\",\n    \"name\": \"Test Customer2\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"3\",\n    \"name\": \"Test Customer3\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update4",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"4\",\n    \"name\": \"Test Customer4\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update5",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"5\",\n    \"name\": \"Test Customer5\",\n    \"email\": \"test@customer.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/delete/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete4",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete5",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/customer/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"customer",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "get",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getByDate",
+					"item": [
+						{
+							"name": "getByDate",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?appointmentDate=2025-07-01T12:00:00",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "appointmentDate",
+											"value": "2025-07-01T12:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByDate2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?appointmentDate=2025-07-02T12:00:00",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "appointmentDate",
+											"value": "2025-07-02T12:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByDate3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?appointmentDate=2025-07-03T12:00:00",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "appointmentDate",
+											"value": "2025-07-03T12:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByDate4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?appointmentDate=2025-07-04T12:00:00",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "appointmentDate",
+											"value": "2025-07-04T12:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByDate5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?appointmentDate=2025-07-05T12:00:00",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "appointmentDate",
+											"value": "2025-07-05T12:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getByAnimal",
+					"item": [
+						{
+							"name": "getByAnimal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?animalName=Bella",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "animalName",
+											"value": "Bella"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByAnimal2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?animalName=Bella2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "animalName",
+											"value": "Bella2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByAnimal3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?animalName=Bella3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "animalName",
+											"value": "Bella3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByAnimal4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?animalName=Bella4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "animalName",
+											"value": "Bella4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByAnimal5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?animalName=Bella5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "animalName",
+											"value": "Bella5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getByDoctor",
+					"item": [
+						{
+							"name": "getByDoctor",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?doctorName=Test%20Doctor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "doctorName",
+											"value": "Test%20Doctor"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByDoctor2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?doctorName=Test%20Doctor2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "doctorName",
+											"value": "Test%20Doctor2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByDoctor3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?doctorName=Test%20Doctor3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "doctorName",
+											"value": "Test%20Doctor3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByDoctor4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?doctorName=Test%20Doctor4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "doctorName",
+											"value": "Test%20Doctor4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByDoctor5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/appointment?doctorName=Test%20Doctor5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "doctorName",
+											"value": "Test%20Doctor5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "save",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"appointmentDate\": \"2025-07-11T12:00:00\",\n    \"animalId\": 1,\n    \"doctorId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"appointmentDate\": \"2025-07-12T12:00:00\",\n    \"animalId\": 2,\n    \"doctorId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"appointmentDate\": \"2025-07-13T12:00:00\",\n    \"animalId\": 3,\n    \"doctorId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"appointmentDate\": \"2025-07-14T12:00:00\",\n    \"animalId\": 4,\n    \"doctorId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"appointmentDate\": \"2025-07-15T12:00:00\",\n    \"animalId\": 5,\n    \"doctorId\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update",
+					"item": [
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"appointmentDate\": \"2025-07-01T12:00:00\",\n    \"animalId\": 1,\n    \"doctorId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"appointmentDate\": \"2025-07-02T12:00:00\",\n    \"animalId\": 2,\n    \"doctorId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 3,\n    \"appointmentDate\": \"2025-07-03T12:00:00\",\n    \"animalId\": 3,\n    \"doctorId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update4",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 4,\n    \"appointmentDate\": \"2025-07-04T12:00:00\",\n    \"animalId\": 4,\n    \"doctorId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update5",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 5,\n    \"appointmentDate\": \"2025-07-05T12:00:00\",\n    \"animalId\": 5,\n    \"doctorId\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/delete/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete4",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete5",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/appointment/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"appointment",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Animal",
+			"item": [
+				{
+					"name": "get",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getName",
+					"item": [
+						{
+							"name": "getName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal?name=Bella",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getName2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal?name=Bella2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getName3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal?name=Bella3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getName4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal?name=Bella4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getName5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal?name=Bella5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getVaccinesByAnimal",
+					"item": [
+						{
+							"name": "getVaccinesByAnimal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/vaccines?name=Bella",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"vaccines"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getVaccinesByAnimal2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/vaccines?name=Bella2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"vaccines"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getVaccinesByAnimal3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/vaccines?name=Bella3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"vaccines"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getVaccinesByAnimal4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/vaccines?name=Bella4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"vaccines"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getVaccinesByAnimal5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/animal/vaccines?name=Bella5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"vaccines"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "save",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bella\",\n    \"species\": \"Dog\",\n    \"breed\": \"Labrador Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bella2\",\n    \"species\": \"Dog\",\n    \"breed\": \"Labrador Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bella3\",\n    \"species\": \"Dog\",\n    \"breed\": \"Labrador Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bella4\",\n    \"species\": \"Dog\",\n    \"breed\": \"Labrador Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bella5\",\n    \"species\": \"Dog\",\n    \"breed\": \"Labrador Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update",
+					"item": [
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"name\": \"Bella\",\n    \"species\": \"Dog\",\n    \"breed\": \"Updated Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"name\": \"Bella2\",\n    \"species\": \"Dog\",\n    \"breed\": \"Updated Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 3,\n    \"name\": \"Bella3\",\n    \"species\": \"Dog\",\n    \"breed\": \"Updated Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update4",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 4,\n    \"name\": \"Bella4\",\n    \"species\": \"Dog\",\n    \"breed\": \"Updated Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update5",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 5,\n    \"name\": \"Bella5\",\n    \"species\": \"Dog\",\n    \"breed\": \"Updated Retriever\",\n    \"gender\": \"Female\",\n    \"colour\": \"Yellow\",\n    \"dateOfBirth\": \"2024-04-01\",\n    \"customerId\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/delete/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete4",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete5",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/animal/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"animal",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "get",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/doctor/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/doctor/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/doctor/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/doctor/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/doctor/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "save",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Doctor\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Doctor2\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Doctor3\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Doctor4\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Doctor5\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"4.Levent\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update",
+					"item": [
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"1\",\n    \"name\": \"Test Doctor\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"2\",\n    \"name\": \"Test Doctor2\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"3\",\n    \"name\": \"Test Doctor3\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update4",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"4\",\n    \"name\": \"Test Doctor4\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update5",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"5\",\n    \"name\": \"Test Doctor5\",\n    \"email\": \"test@doc.dev\",\n    \"phone\": \"05xxxxxxxxx\",\n    \"address\": \"Update Test\",\n    \"city\": \"Istanbul\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/delete/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete4",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete5",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/doctor/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"doctor",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Vaccine",
+			"item": [
+				{
+					"name": "get",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "save",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Vaccine\",\n    \"code\": \"test.vac\",\n    \"protectionStartDate\": \"2025-06-23\",\n    \"protectionFinishDate\": \"2025-07-01\",\n    \"animalId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Vaccine2\",\n    \"code\": \"test.vac\",\n    \"protectionStartDate\": \"2025-06-23\",\n    \"protectionFinishDate\": \"2025-07-01\",\n    \"animalId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Vaccine3\",\n    \"code\": \"test.vac\",\n    \"protectionStartDate\": \"2025-06-23\",\n    \"protectionFinishDate\": \"2025-07-01\",\n    \"animalId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Vaccine4\",\n    \"code\": \"test.vac\",\n    \"protectionStartDate\": \"2025-06-23\",\n    \"protectionFinishDate\": \"2025-07-01\",\n    \"animalId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test Vaccine5\",\n    \"code\": \"test.vac\",\n    \"protectionStartDate\": \"2025-06-23\",\n    \"protectionFinishDate\": \"2025-07-01\",\n    \"animalId\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update",
+					"item": [
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"name\": \"Test Vaccine\",\n    \"code\": \"updated.vac\",\n    \"protectionStartDate\": \"2025-06-23\",\n    \"protectionFinishDate\": \"2026-01-01\",\n    \"animalId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"name\": \"Test Vaccine2\",\n    \"code\": \"updated.vac\",\n    \"protectionStartDate\": \"2025-12-31\",\n    \"protectionFinishDate\": \"2026-01-01\",\n    \"animalId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 3,\n    \"name\": \"Test Vaccine3\",\n    \"code\": \"updated.vac\",\n    \"protectionStartDate\": \"2025-12-31\",\n    \"protectionFinishDate\": \"2026-01-01\",\n    \"animalId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update4",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 4,\n    \"name\": \"Test Vaccine4\",\n    \"code\": \"updated.vac\",\n    \"protectionStartDate\": \"2025-12-31\",\n    \"protectionFinishDate\": \"2026-01-01\",\n    \"animalId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update5",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 5,\n    \"name\": \"Test Vaccine5\",\n    \"code\": \"updated.vac\",\n    \"protectionStartDate\": \"2025-12-31\",\n    \"protectionFinishDate\": \"2026-01-01\",\n    \"animalId\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/delete/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete4",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete5",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/vaccine/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getByAnimal",
+					"item": [
+						{
+							"name": "getByAnimal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/animal?name=Bella",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByAnimal2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/animal?name=Bella2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByAnimal3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/animal?name=Bella3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByAnimal4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/animal?name=Bella4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByAnimal5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/vaccine/animal?name=Bella5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"vaccine",
+										"animal"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Bella5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getExpiring",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/vaccine/expiring-in-two-weeks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"vaccine",
+								"expiring-in-two-weeks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AvailableDate",
+			"item": [
+				{
+					"name": "get",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/availabledate/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/availabledate/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/availabledate/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/availabledate/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/availabledate/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "save",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"availableDate\": \"2025-12-31\",\n    \"doctorId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"availableDate\": \"2025-12-31\",\n    \"doctorId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"availableDate\": \"2025-12-31\",\n    \"doctorId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"availableDate\": \"2025-12-31\",\n    \"doctorId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"availableDate\": \"2025-12-31\",\n    \"doctorId\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update",
+					"item": [
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"availableDate\": \"2025-06-30\",\n    \"doctorId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"availableDate\": \"2025-06-30\",\n    \"doctorId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 3,\n    \"availableDate\": \"2025-06-30\",\n    \"doctorId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update4",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 4,\n    \"availableDate\": \"2025-06-30\",\n    \"doctorId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update5",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 5,\n    \"availableDate\": \"2025-06-30\",\n    \"doctorId\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/delete/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete4",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete5",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8085/availabledate/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"availabledate",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

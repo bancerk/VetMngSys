@@ -1,0 +1,18 @@
+server:
+  port: 8085 # The port on which the Spring Boot application will run
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vet-management-system # JDBC URL for PostgreSQL database connection
+    username: canberk # Database username
+    password: bancerk # Database password
+    driver-class-name: org.postgresql.Driver # PostgreSQL JDBC driver class
+  jpa:
+    hibernate:
+      ddl-auto: update # Automatically update the database schema to match entities
+    show-sql: true # Show SQL statements in the console
+    database-platform: org.hibernate.dialect.PostgreSQLDialect # Hibernate dialect for PostgreSQL
+    properties:
+      '[hibernate.format_sql]': true # Format SQL output for readability
+  application:
+    name: vet-management-system # Name of the Spring Boot

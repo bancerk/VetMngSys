@@ -1,0 +1,6 @@
+entity
+dao (repo)
+service (business abstract)
+manager (business concrete)
+dto
+api (controller)
