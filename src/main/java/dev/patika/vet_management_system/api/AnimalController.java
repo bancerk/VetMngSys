@@ -1,8 +1,8 @@
 package dev.patika.vet_management_system.api;
 
 import dev.patika.vet_management_system.core.modelMapper.ModelMapperService;
+import dev.patika.service.CustomerManager;
 import dev.patika.vet_management_system.business.concretes.AnimalManager;
-import dev.patika.vet_management_system.business.concretes.CustomerManager;
 import dev.patika.vet_management_system.core.utils.Result;
 import dev.patika.vet_management_system.core.utils.ResultData;
 import dev.patika.vet_management_system.core.utils.ResultHelper;

@@ -1,15 +1,12 @@
-package dev.patika.vet_management_system.dto.request;
+package dev.patika.customer_service.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class CustomerUpdateRequest {
 
     @Positive(message = "Id must be a positive number")

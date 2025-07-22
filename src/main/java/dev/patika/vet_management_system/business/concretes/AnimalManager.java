@@ -1,10 +1,10 @@
 package dev.patika.vet_management_system.business.concretes;
 
+import dev.patika.repo.CustomerRepo;
 import dev.patika.vet_management_system.business.abstracts.IAnimalService;
 import dev.patika.vet_management_system.core.exceptions.NotFoundException;
 import dev.patika.vet_management_system.core.utils.Message;
 import dev.patika.vet_management_system.dao.AnimalRepo;
-import dev.patika.vet_management_system.dao.CustomerRepo;
 import dev.patika.vet_management_system.entities.Animal;
 
 import org.springframework.stereotype.Service;

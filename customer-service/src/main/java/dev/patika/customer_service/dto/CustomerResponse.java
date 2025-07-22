@@ -1,15 +1,11 @@
-package dev.patika.vet_management_system.dto.response;
+package dev.patika.customer_service.dto;
 
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class CustomerResponse {
 
     @Id

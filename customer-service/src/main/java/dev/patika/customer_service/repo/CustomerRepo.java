@@ -1,6 +1,6 @@
-package dev.patika.vet_management_system.dao;
+package dev.patika.customer_service.repo;
 
-import dev.patika.vet_management_system.entities.Customer;
+import dev.patika.customer_service.entities.Customer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
