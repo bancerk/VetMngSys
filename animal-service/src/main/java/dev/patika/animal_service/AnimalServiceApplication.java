@@ -1,13 +1,13 @@
-package dev.patika.customer_service;
+package dev.patika.animal_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CustomerServiceApplication {
+public class AnimalServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CustomerServiceApplication.class, args);
+		SpringApplication.run(AnimalServiceApplication.class, args);
 	}
 
 }
