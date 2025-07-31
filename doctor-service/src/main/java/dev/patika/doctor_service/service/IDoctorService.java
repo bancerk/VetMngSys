@@ -1,6 +1,6 @@
-package dev.patika.vet_management_system.business.abstracts;
+package dev.patika.doctor_service.service;
 
-import dev.patika.vet_management_system.entities.Doctor;
+import dev.patika.doctor_service.entities.Doctor;
 
 public interface IDoctorService {
 

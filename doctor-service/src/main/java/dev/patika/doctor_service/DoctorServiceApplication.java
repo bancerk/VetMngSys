@@ -1,13 +1,13 @@
-package dev.patika.vet_management_system;
+package dev.patika.doctor_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VetManagementSystemApplication {
+public class DoctorServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VetManagementSystemApplication.class, args);
+		SpringApplication.run(DoctorServiceApplication.class, args);
 	}
 
 }

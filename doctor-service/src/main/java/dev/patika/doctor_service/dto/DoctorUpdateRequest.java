@@ -8,8 +8,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class DoctorUpdateRequest {
 
     @Positive(message = "Id must be a positive number")
