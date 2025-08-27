@@ -14,7 +14,6 @@ public class ModelMapperConfig {
     public ModelMapper getModelMapper(){
         ModelMapper modelMapper = new ModelMapper();
 
-        // Custom mapping for Appointment -> AppointmentResponse
         modelMapper.addMappings(new PropertyMap<Appointment, AppointmentResponse>() {
             @Override
             protected void configure() {

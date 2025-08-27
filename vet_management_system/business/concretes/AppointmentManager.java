@@ -35,20 +35,16 @@ public class AppointmentManager implements IAppointmentService {
     @Override
     @Transactional
     public Appointment save(Appointment appointment) {
-        // Ensure appointment is at the hour mark
         if (appointment.getAppointmentDate().getMinute() != 0 || appointment.getAppointmentDate().getSecond() != 0) {
             throw new IllegalArgumentException("Appointments must be scheduled exactly on the hour (e.g., 10:00, 14:00).");
         }
-        // Check for overlapping available date
         Long doctorId = appointment.getDoctor().getId();
         if (availableDateRepo.existsByDoctorIdAndAvailableDate(doctorId, appointment.getAppointmentDate().toLocalDate())) {
             throw new IllegalArgumentException("Doctor already has an available date at this time.");
         }
-        // Check for overlapping appointments
         if (appointmentRepo.existsByDoctorIdAndAppointmentDate(doctorId, appointment.getAppointmentDate())) {
             throw new IllegalArgumentException("Doctor already has an appointment at this hour.");
         }
-        // Ensure doctor and animal exist
         Doctor doctor = doctorRepo.findById(doctorId)
                 .orElseThrow(() -> new NotFoundException("Doctor not found"));
         Animal animal = animalRepo.findById(appointment.getAnimal().getId())
@@ -56,9 +52,7 @@ public class AppointmentManager implements IAppointmentService {
         appointment.setDoctor(doctor);
         appointment.setAnimal(animal);
 
-        // Save and return
         Appointment savedAppointment = appointmentRepo.save(appointment);
-        // Fetch again to ensure all relationships are loaded
         return appointmentRepo.findById(savedAppointment.getId())
                 .orElseThrow(() -> new NotFoundException("Appointment not found after save"));
     }
@@ -72,31 +66,25 @@ public class AppointmentManager implements IAppointmentService {
     @Override
     @Transactional
     public Appointment update(Appointment appointment) {
-        // Ensure appointment is at the hour mark
         if (appointment.getAppointmentDate().getMinute() != 0 || appointment.getAppointmentDate().getSecond() != 0) {
             throw new IllegalArgumentException("Appointments must be scheduled exactly on the hour (e.g., 10:00, 14:00).");
         }
-        // Ensure the appointment exists
         Appointment existing = this.get(appointment.getId());
-        // update fields
         existing.setAppointmentDate(appointment.getAppointmentDate());
         existing.setDoctor(appointment.getDoctor());
         existing.setAnimal(appointment.getAnimal());
         Appointment updatedAppointment = appointmentRepo.save(existing);
-        // Fetch again to ensure all relationships are loaded
         return appointmentRepo.findById(updatedAppointment.getId())
                 .orElseThrow(() -> new NotFoundException("Appointment not found after update"));
     }
 
     @Override
     public boolean delete(Long id) {
-        this.get(id); // Throws if not found
+    this.get(id);
         appointmentRepo.deleteById(id);
         return true;
     }
 
-    // Method to find appointments by date
-    // Accepts a LocalDateTime and returns a list of appointments on that date
     @Override
     public List<Appointment> findByAppointmentDate(LocalDateTime appointmentDate) {
         LocalDate date = appointmentDate.toLocalDate();
@@ -104,16 +92,12 @@ public class AppointmentManager implements IAppointmentService {
             .filter(a -> a.getAppointmentDate().toLocalDate().equals(date)).toList();
     }
 
-    // Method to find appointments by animal name
-    // Accepts an animal name and returns a list of appointments for that animal
     @Override
     public List<Appointment> findByAnimalName(String animalName) {
         return appointmentRepo.findAll().stream()
             .filter(a -> a.getAnimal() != null && a.getAnimal().getName().equalsIgnoreCase(animalName)).toList();
     }
 
-    // Method to find appointments by doctor name
-    // Accepts a doctor name and returns a list of appointments for that doctor
     @Override
     public List<Appointment> findByDoctorName(String doctorName) {
         return appointmentRepo.findAll().stream()

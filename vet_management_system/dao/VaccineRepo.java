@@ -10,12 +10,9 @@ import java.util.List;
 
 @Repository
 public interface VaccineRepo extends JpaRepository<Vaccine, Long> {
-    // Find all vaccines expiring within a date range
     List<Vaccine> findByProtectionFinishDateBetween(LocalDate start, LocalDate end);
 
-    // Find all vaccines expiring before a certain date
     List<Vaccine> findByProtectionFinishDateBefore(LocalDate date);
 
-    // Find all vaccines for a given animal
     List<Vaccine> findByAnimal(Animal animal);
 }
