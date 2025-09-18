@@ -1,4 +1,4 @@
-package dev.scheduling_service.entities;
+package dev.patika.scheduling_service.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
